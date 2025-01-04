@@ -1,5 +1,6 @@
 import './globals.css';
 import { ReactNode } from 'react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'SpaceX Dashboard',
@@ -22,14 +23,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               />
             </div>
             {/* Navigation */}
-            <div className="flex gap-8 text-sm font-semibold">
-              <a href="/" className="hover:text-gray-400 transition">
-                Accueil
-              </a>
-              <a href="/launches" className="hover:text-gray-400 transition">
-                Lancements à venir
-              </a>
-            </div>
+            <Link href="/" className="hover:text-gray-400 transition">
+  Accueil
+</Link>
+<Link href="/launches" className="hover:text-gray-400 transition">
+  Lancements à venir
+</Link>
           </nav>
         </header>
 
