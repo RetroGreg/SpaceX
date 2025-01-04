@@ -12,7 +12,7 @@ export default function Header() {
       <nav className="flex justify-between items-center max-w-5xl mx-auto">
         {/* Logo */}
         <div className="flex items-center">
-          <Image src="/SpaceX.png" alt="SpaceX Logo" width={100} height={100} />
+          <Image src="/SpaceX.png" alt="SpaceX Logo" width={200} height={200} />
         </div>
 
         {/* Menu burger (mobile only) */}
