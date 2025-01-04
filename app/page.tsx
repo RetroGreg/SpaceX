@@ -36,7 +36,7 @@ export default async function HomePage() {
         {nextLaunch ? (
           <>
             <h2 className="text-3xl font-bold text-center mb-4">
-              {isLaunched ? "Lancement termin&eacute" : "Prochain Lancement"}
+              {isLaunched ? "Lancement terminé" : "Prochain Lancement"}
             </h2>
             <p className="text-center text-gray-400">
               Mission : <span className="text-white">{nextLaunch.name}</span>
