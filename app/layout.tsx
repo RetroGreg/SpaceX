@@ -1,6 +1,7 @@
 import './globals.css';
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'; 
 
 export const metadata = {
   title: 'SpaceX Dashboard',
@@ -16,10 +17,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <nav className="flex justify-between items-center max-w-5xl mx-auto">
             {/* Logo */}
             <div className="flex items-center">
-              <img
+              <Image
                 src="/SpaceX.png"
                 alt="SpaceX Logo"
-                className="h-8"
+                width={100} 
+                height={50}
+                priority
               />
             </div>
             {/* Navigation */}
@@ -63,7 +66,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               backgroundPosition: 'center',
             }}
           ></div>
-          <p className="relative z-10">© 2025 - RetroGreg | Explorez l’infini et au-delà</p>
+          <p className="relative z-10">© 2025 - RetroGreg | Explorez l&apos;infini et au-delà</p>
         </footer>
       </body>
     </html>
