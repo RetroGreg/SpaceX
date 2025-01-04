@@ -20,8 +20,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <Image
                 src="/SpaceX.png"
                 alt="SpaceX Logo"
-                width={100} 
-                height={50}
+                width={200} 
+                height={100}
                 priority
               />
             </div>
