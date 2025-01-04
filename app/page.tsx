@@ -22,15 +22,14 @@ export default async function HomePage() {
         </h1>
       </div>
       {/* Astronaute */}
-      import Image from 'next/image';
       <Image
         src="/astronaut.png"
         alt="Astronaute"
-        width={500} // Largeur maximale de l'image
-        height={500} // Taille adaptée
+        width={500}
+        height={500}
         className="absolute top-[150px] w-[300px] sm:w-[400px] md:w-[500px] h-auto opacity-90 pointer-events-none animate-float"
         style={{ zIndex: 0 }}
-        priority // Optionnel : charge cette image en priorité
+        priority 
       />
       {/* Carte dynamique */}
       <div className="relative w-full max-w-md p-6 bg-gray-900 bg-opacity-90 rounded-lg shadow-lg border border-gray-700 backdrop-blur-md z-10">
