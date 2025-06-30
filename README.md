@@ -1,6 +1,6 @@
 # SpaceX Dashboard
 
-![SpaceX Dashboard Preview](https://github.com/user-attachments/assets/spacex-dashboard-preview.png)
+![SpaceX Dashboard Preview](public/spaceX.png)
 
 ## Description
 
