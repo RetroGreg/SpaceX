@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SpaceX Dashboard
 
-## Getting Started
+![SpaceX Dashboard Preview](https://github.com/user-attachments/assets/spacex-dashboard-preview.png)
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Ce projet est un **dashboard spatial immersif** qui présente les données des missions SpaceX en temps réel. Développé avec les technologies modernes du web, ce dashboard a été le projet déterminant qui m'a permis de décrocher mon stage en développement web. Il combine une interface utilisateur élégante avec une intégration API robuste pour offrir une expérience utilisateur exceptionnelle.
+
+## Impact professionnel
+
+✨ **Ce projet a été décisif pour l'obtention de mon stage**, démontrant ma capacité à :
+
+- Intégrer des APIs externes complexes
+- Créer des interfaces modernes et performantes
+- Maîtriser les technologies actuelles du développement web
+
+---
+
+## Démo
+
+🚀 [Voir la démo en ligne](https://space-x-ruby.vercel.app/)
+
+---
+
+## Fonctionnalités
+
+### 📊 **Dashboard principal**
+
+- Vue d'ensemble des missions SpaceX
+- Statistiques en temps réel
+- Visualisations de données interactives
+- Animations fluides et transitions modernes
+
+### 🚀 **Données des missions**
+
+- Liste complète des lancements SpaceX
+- Détails de chaque mission (succès/échec, charge utile, etc.)
+- Filtres et recherche avancée
+- Chronologie des événements
+
+### 🛸 **Intégration API**
+
+- Connexion à l'API SpaceX officielle
+- Mise à jour automatique des données
+- Gestion optimisée du cache
+- Gestion des erreurs et états de chargement
+
+### 📱 **Design responsive**
+
+- Interface adaptative pour tous les appareils
+- Performance optimisée sur mobile
+- Navigation intuitive
+
+---
+
+## Technologies utilisées
+
+### Frontend
+
+- **Next.js 15** : Framework React avec rendu côté serveur
+- **TypeScript** : Typage statique pour une meilleure maintenabilité
+- **Tailwind CSS** : Styling utility-first pour un design moderne
+- **Framer Motion** : Animations fluides et interactives
+
+### Intégration
+
+- **API REST SpaceX** : Source de données officielle
+- **Axios/Fetch** : Gestion des requêtes HTTP
+- **React Query** : Gestion du cache et des états
+
+### Déploiement
+
+- **Vercel** : Hébergement optimisé pour Next.js
+
+---
+
+## Architecture du projet
+
+```
+spacex-dashboard/
+├── src/
+│   ├── app/              # Routes Next.js 15
+│   ├── components/       # Composants réutilisables
+│   │   ├── ui/          # Composants UI de base
+│   │   ├── charts/      # Visualisations de données
+│   │   └── layout/      # Composants de mise en page
+│   ├── hooks/           # Hooks personnalisés
+│   ├── lib/             # Utilitaires et helpers
+│   ├── services/        # Logique API
+│   └── types/           # Types TypeScript
+├── public/              # Assets statiques
+└── ...configs           # Fichiers de configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Points techniques notables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🎯 **Optimisations de performance**
 
-## Learn More
+- Lazy loading des composants
+- Optimisation des images avec Next.js Image
+- Mise en cache intelligente des données API
+- Code splitting automatique
 
-To learn more about Next.js, take a look at the following resources:
+### 🔧 **Bonnes pratiques**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Code TypeScript strict
+- Composants modulaires et réutilisables
+- Gestion d'état efficace
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎨 **UX/UI**
 
-## Deploy on Vercel
+- Animations subtiles mais impactantes
+- Feedback utilisateur instantané
+- Accessibilité (ARIA labels, navigation clavier)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Apprentissages clés
+
+Ce projet m'a permis de :
+
+- Utiliser l'écosystème Next.js moderne
+- Comprendre l'importance de l'optimisation des performances
+- Développer des compétences en visualisation de données
+- Apprendre à intégrer efficacement des APIs tierces
+- Créer une expérience utilisateur professionnelle
+
+---
+
+## Auteur
+
+**Grégoire** - [GitHub](https://github.com/RetroGreg)
+
+---
+
+## Remerciements
+
+- SpaceX pour leur API publique exceptionnelle
+- La communauté Next.js pour les ressources d'apprentissage
+- Les recruteurs qui ont vu le potentiel de ce projet
