@@ -1,7 +1,6 @@
 # SpaceX Dashboard
 
-![SpaceX Dashboard Preview](https://raw.githubusercontent.com/RetroGreg/SpaceX/main/public/spaceX.png)
-
+![Image](https://github.com/user-attachments/assets/df6df4f9-4017-4a33-ba05-17c9d568b2a7)
 ## Description
 
 Ce projet est un **dashboard spatial immersif** qui présente les données des missions SpaceX en temps réel. Développé avec les technologies modernes du web, ce dashboard a été le projet déterminant qui m'a permis de décrocher mon stage en développement web. Il combine une interface utilisateur élégante avec une intégration API robuste pour offrir une expérience utilisateur exceptionnelle.
