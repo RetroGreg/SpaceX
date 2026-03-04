@@ -2,13 +2,18 @@ import LaunchCountdown from "../components/LaunchCountdown";
 import Image from "next/image";
 
 export default async function HomePage() {
-  const res = await fetch(
-    "https://ll.thespacedevs.com/2.2.0/launch/upcoming?search=SpaceX&limit=2",
-    { next: { revalidate: 60 } }
-  );
-
-  const data = await res.json();
-  const launches = data.results || [];
+  let launches = [];
+  try {
+    const res = await fetch(
+      "https://ll.thespacedevs.com/2.2.0/launch/upcoming?search=SpaceX&limit=2",
+      { next: { revalidate: 60 } }
+    );
+    if (!res.ok) throw new Error(`API error: ${res.status}`);
+    const data = await res.json();
+    launches = data.results || [];
+  } catch (error) {
+    console.error("Failed to fetch launches:", error);
+  }
   const nextLaunch = launches[0];
   const upcomingLaunch = launches[1];
   const isLaunched = new Date(nextLaunch?.net).getTime() < Date.now();

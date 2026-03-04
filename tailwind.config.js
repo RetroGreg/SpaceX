@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },

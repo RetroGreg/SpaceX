@@ -5,13 +5,18 @@ type LaunchShort = {
   };
   
   export default async function LaunchesPage() {
-    const res = await fetch(
-      'https://ll.thespacedevs.com/2.2.0/launch/upcoming?search=SpaceX&limit=7',
-      { next: { revalidate: 60 } }
-    );
-  
-    const data = await res.json();
-    const launches = (data.results || []) as LaunchShort[];
+    let launches: LaunchShort[] = [];
+    try {
+      const res = await fetch(
+        'https://ll.thespacedevs.com/2.2.0/launch/upcoming?search=SpaceX&limit=7',
+        { next: { revalidate: 60 } }
+      );
+      if (!res.ok) throw new Error(`API error: ${res.status}`);
+      const data = await res.json();
+      launches = (data.results || []) as LaunchShort[];
+    } catch (error) {
+      console.error("Failed to fetch launches:", error);
+    }
   
     return (
       <div className="flex flex-col items-center text-white p-6">

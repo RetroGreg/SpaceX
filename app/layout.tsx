@@ -1,6 +1,9 @@
 import './globals.css';
 import { ReactNode } from 'react';
+import { Space_Grotesk } from 'next/font/google';
 import Header from "../components/Header";
+
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'SpaceX Dashboard',
@@ -10,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
-      <body className="bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen w-full flex flex-col">
+      <body className={`${spaceGrotesk.className} bg-gradient-to-b from-black via-gray-900 to-black text-white min-h-screen w-full flex flex-col`}>
         {/* Header */}
         <Header />
 
