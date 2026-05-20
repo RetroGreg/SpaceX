@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "^16.2.3",
+    "next": "^16.2.6",
     "react": "^19.0.1",
     "react-dom": "^19.0.1"
   },
@@ -20,8 +20,8 @@
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
-    "eslint-config-next": "^16.2.3",
-    "postcss": "^8.4.49",
+    "eslint-config-next": "^16.2.6",
+    "postcss": "^8.5.15",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   },
@@ -30,6 +30,10 @@
     "glob": ">=10.5.0",
     "minimatch@>=9.0.0": ">=9.0.7",
     "flatted": ">=3.4.2",
-    "picomatch@>=4.0.0": ">=4.0.4"
+    "picomatch@>=4.0.0": ">=4.0.4",
+    "brace-expansion@>=5.0.0": ">=5.0.6",
+    "next": {
+      "postcss": ">=8.5.10"
+    }
   }
 }
